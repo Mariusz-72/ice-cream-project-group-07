@@ -26,19 +26,18 @@
       </figcaption>
     </figure>
     <div>
-      <button type="button" [data-modal-open]>Read more</button>
+      <button type="button" data-modal-open>Read more</button>
     </div>
     <!--Modal1234-->
-    <div class="backdrop is-hidden" [data-modal]>
+    <div class="backdrop is-hidden" data-modal>
       <figure>
         <iframe
-          width="560"
-          height="315"
           src="https://www.youtube.com/embed/hO-7cz7gyAY"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
+          class="backdrop__video"
         ></iframe>
         <figcaption>
           <p>
@@ -54,7 +53,7 @@
     </div>
     <!--Modal^^-->
     <figure>
-      <svg><use href="/src/images/how_made_icon.svg"></use></svg>
+      <svg><use href="/src/images/how_made_icon#icon-cow-head.svg"></use></svg>
       <figcaption>
         <h3>721</h3>
         <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
