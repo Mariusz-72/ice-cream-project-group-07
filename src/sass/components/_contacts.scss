@@ -1,0 +1,124 @@
+.contact {
+  padding: 20px;
+  background: #84a178;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  @include tablet {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    // margin-top: -299px;
+  }
+
+  &__container {
+    width: 280px;
+    height: 412px;
+    background-color: aliceblue;
+    border-radius: 24px;
+    background: #fcfcfc;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+    padding: 32px 24px;
+
+    @include tablet {
+      width: 224px;
+      height: 537px;
+      gap: 32px;
+      padding: 40px 24px;
+    }
+    @include desktop {
+      width: 368px;
+      height: 542px;
+      gap: 32px;
+    }
+  }
+  &__orginal-heading-container {
+    width: 80px;
+    height: 22px;
+    border-radius: 4px;
+    background: #f8d24e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    @include tablet {
+      margin-bottom: 32px;
+      width: 138px;
+      height: 30px;
+    }
+  }
+  .--contact__orginal-heading-container {
+    width: 130px;
+  }
+  &__title {
+    text-transform: uppercase;
+    color: #131313;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__simply-text {
+    color: #131313;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%;
+    letter-spacing: 0.48px;
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+  .--contact__simply-text {
+    color: #ababab;
+  }
+
+  &__links-list {
+    list-style: none;
+    color: #d6936d;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 183%;
+    letter-spacing: 0.48px;
+    margin-bottom: 24px;
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+  &__box {
+    @include tablet {
+      width: 173px;
+      height: 71px;
+    }
+  }
+  &__under-line {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    margin-top: 24px;
+    @include tablet {
+      margin-bottom: 32px;
+      margin-top: 32px;
+    }
+  }
+  &__list-style-none {
+    list-style: none;
+  }
+  &__tel-and-mail {
+    text-decoration: none;
+  }
+  &__btn-our-location {
+    margin-top: 8px;
+  }
+}
