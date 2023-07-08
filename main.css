@@ -37,23 +37,23 @@ ul {
   width: 100%;
   margin: 0 auto;
   height: 1037px;
-  background-image: url(../../images/6.reviews/BackgroudMobile1x.jpg.jpg);
+  background-image: url(/utils/images/reviews/BackgroudMobile1x.jpg.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .swiper {
-    background-image: url(../../images/6.reviews/BackgroudMobile2x.jpg.jpg);
+    background-image: url(/utils/images/reviews/BackgroudMobile2x.jpg.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .swiper {
     max-width: 768px;
     background-repeat: no-repeat;
-    background-image: url(../../images/6.reviews/BackgroundTablet1x.jpg\ \(2\).jpg);
+    background-image: url(/utils/images/reviews/BackgroundTablet1x.jpg\ \(2\).jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .swiper {
-    background-image: url(../../images/6.reviews/BackgroundTablet2x.jpg\ \(2\).jpg);
+    background-image: url(/utils/images/reviews/BackgroundTablet2x.jpg\ \(2\).jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -61,19 +61,20 @@ ul {
     max-width: 1200px;
     background-repeat: no-repeat;
     padding: 200px 0;
-    background-image: url(../../images/6.reviews/BackgroudDesktop1x.jpg.jpg);
+    background-image: url(/utils/images/reviews/BackgroudDesktop1x.jpg.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .swiper {
-    background-image: url(../../images/6.reviews/BackgroudDesktop2x.jpg.jpg);
+    background-image: url(/utils/images/reviews/BackgroudDesktop2x.jpg.jpg);
   }
 }
-.swiper__slide {
+
+.swiper-slide__slide {
   width: 1000px;
   height: 30px;
 }
-.swiper__image {
+.swiper-slide__image {
   width: 85px;
   height: 85px;
   border-radius: 50%;
@@ -82,7 +83,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.swiper__text {
+.swiper-slide__text {
   background-color: #84A178;
   color: #FCFCFC;
   width: 280px;
@@ -98,13 +99,13 @@ ul {
   font-size: 12px;
   font-weight: 400;
 }
-.swiper__heading {
+.swiper-slide__heading {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.86;
   margin-top: 32px;
 }
-.swiper__gallery {
+.swiper-slide__gallery {
   width: 280px;
   height: 130px;
   margin-top: -30px;

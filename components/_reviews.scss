@@ -6,23 +6,23 @@
     width: 100%;
     margin: 0 auto;
     height: 1037px;
-    background-image: url(../../images/6.reviews/BackgroudMobile1x.jpg.jpg);
+    background-image: url(/utils/images/reviews/BackgroudMobile1x.jpg.jpg);
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../../images/6.reviews/BackgroudMobile2x.jpg.jpg);
+            background-image: url(/utils/images/reviews/BackgroudMobile2x.jpg.jpg);
         }
     
         @include tablet {
             max-width: 768px;
             background-repeat: no-repeat;
-            background-image: url(../../images/6.reviews/BackgroundTablet1x.jpg\ \(2\).jpg);
+            background-image: url(/utils/images/reviews/BackgroundTablet1x.jpg\ \(2\).jpg);
     
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(../../images/6.reviews/BackgroundTablet2x.jpg\ \(2\).jpg);
+                background-image: url(/utils/images/reviews/BackgroundTablet2x.jpg\ \(2\).jpg);
             }
         }
     
@@ -30,14 +30,17 @@
             max-width: 1200px;
             background-repeat: no-repeat;
             padding: 200px 0;
-            background-image: url(../../images/6.reviews/BackgroudDesktop1x.jpg.jpg);
+            background-image: url(/utils/images/reviews/BackgroudDesktop1x.jpg.jpg);
     
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(../../images/6.reviews/BackgroudDesktop2x.jpg.jpg);
+                background-image: url(/utils/images/reviews/BackgroudDesktop2x.jpg.jpg);
             }
         }
+}
+
+.swiper-slide {
     
     &__slide {
         width: 1000px;
