@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+/**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact {
+  padding: 20px;
+  background: #84a178;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+  }
+}
+.contact__container {
+  width: 280px;
+  height: 412px;
+  background-color: aliceblue;
+  border-radius: 24px;
+  background: #fcfcfc;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  padding: 32px 24px;
+}
+@media screen and (min-width: 768px) {
+  .contact__container {
+    width: 224px;
+    height: 537px;
+    gap: 32px;
+    padding: 40px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__container {
+    width: 368px;
+    height: 542px;
+    gap: 32px;
+  }
+}
+.contact__orginal-heading-container {
+  width: 80px;
+  height: 22px;
+  border-radius: 4px;
+  background: #f8d24e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contact__orginal-heading-container {
+    margin-bottom: 32px;
+    width: 138px;
+    height: 30px;
+  }
+}
+.contact .--contact__orginal-heading-container {
+  width: 130px;
+}
+.contact__title {
+  text-transform: uppercase;
+  color: #131313;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+}
+@media screen and (min-width: 768px) {
+  .contact__title {
+    font-size: 14px;
+  }
+}
+.contact__simply-text {
+  color: #131313;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+  letter-spacing: 0.48px;
+}
+@media screen and (min-width: 768px) {
+  .contact__simply-text {
+    font-size: 14px;
+  }
+}
+.contact .--contact__simply-text {
+  color: #ababab;
+}
+.contact__links-list {
+  list-style: none;
+  color: #d6936d;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 183%;
+  letter-spacing: 0.48px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .contact__links-list {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__box {
+    width: 173px;
+    height: 71px;
+  }
+}
+.contact__under-line {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .contact__under-line {
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+}
+.contact__list-style-none {
+  list-style: none;
+}
+.contact__tel-and-mail {
+  text-decoration: none;
+}
+.contact__btn-our-location {
+  margin-top: 8px;
+}
+
+.about {
+  background-color: #5FA200;
+}
+
+.advantages {
+  background-color: #5FA200;
+}
+
+.crawler {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
