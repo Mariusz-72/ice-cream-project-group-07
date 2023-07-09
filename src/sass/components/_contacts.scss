@@ -1,11 +1,17 @@
+.contact-main {
+  background-color: $olive-green;
+  .contact-main__title {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
 .contact {
-  padding: 20px;
-  background: #84a178;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 16px;
   @include tablet {
     flex-direction: row;
     gap: 16px;
@@ -82,7 +88,12 @@
   .--contact__simply-text {
     color: #ababab;
   }
-
+  .--contact__simply-margin {
+    margin-bottom: 8px;
+  }
+  .--contact__simply-text-margin24 {
+    margin-bottom: 24px;
+  }
   &__links-list {
     list-style: none;
     color: #d6936d;
