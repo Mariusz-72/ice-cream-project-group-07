@@ -1,1 +1,105 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zadanie</title>
+    <link rel="stylesheet" href="css/main.min.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+        <section class="section">
+            <div class="container">
+                <div>
+                    <button class="button" type="button" data-modal-open>Read more</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal_btn-svg" type="modal-button"  data-modal-close>
+            <svg  width="13" height="13">
+                <use href="./../images/icons.svg#icon-close-x"></use>
+            </svg>
+          </button>
+          <form >
+            <div class="forms">
+              <legend class="forms_title">Chocolate icecream</legend>
+              <div class="forms_img">
+                <img src="./../images/icecream.png" srcset="./../images/icecream@2x.png 2x" alt="Lody czekoladowe" 
+                >
+              </div>
+              <div >
+                <ul class="forms_nutrition">
+                  <li class="forms_nutrition-item">
+                    <p>320</p>
+                    <span>kkal</span>
+                  </li>
+                  <li class="forms_nutrition-item">
+                    <p>4g</p>
+                    <span>Protein</span>
+                  </li>
+                  <li class="forms_nutrition-item">
+                    <p>8.2g</p>
+                    <span>Fats</span>
+                  </li>
+                  <li class="forms_nutrition-item">
+                    <p>40,4g</p>
+                    <span>Carbs</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="forms_ingredients">
+                <p>Ingredients</p>
+                <ul class="forms_ingredients-list">
+                  <li class="forms_ingredients-item">
+                    <div>Milk</div>
+                    <div>100ml</div>
+                  </li>
+                  <li class="forms_ingredients-item">
+                    <div>Belgian chocolate</div>
+                    <div>20g</div>
+                  </li>
+                  <li class="forms_ingredients-item">
+                    <div>Cream</div>
+                    <div>150ml</div>
+                  </li>
+                  <li class="forms_ingredients-item">
+                    <div>Cocoa powder</div>
+                    <div>30g</div>
+                  </li>
+                  <li class="forms_ingredients-item">
+                    <div>Sugar</div>
+                    <div>40g</div>
+                  </li>
+                  <li class="forms_ingredients-item">
+                    <div>Vanilla sugar</div>
+                    <div>10g</div>
+                  </li>
+                </ul>
+              </div>
+              <label class="forms_item">
+                <input type="text" name="username" placeholder="Name" required pattern="\w{3,20}">
+              </label>
+              <label class="forms_item">
+                <input type="tel" name="phone" placeholder="Phone" required pattern="[0-9].{8,}"
+                
+                >
+              </label>
+              <label class="forms_comment">
+                <textarea name="comment" rows="5" placeholder="Comment"></textarea>
+              </label>
+              <button class="forms_submit-button" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="./../js/modal.js"></script>
+  </body>
+</html>
