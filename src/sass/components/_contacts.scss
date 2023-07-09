@@ -12,11 +12,14 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  margin-top: 60px;
   @include tablet {
     flex-direction: row;
-    gap: 16px;
     justify-content: center;
     // margin-top: -299px;
+  }
+  @include desktop {
+    gap: 32px;
   }
 
   &__container {
@@ -131,5 +134,49 @@
   }
   &__btn-our-location {
     margin-top: 8px;
+  }
+  &__btn-list {
+    margin-top: 20px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    @include tablet {
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-top: 0;
+    }
+    @include desktop {
+      padding-top: 60px;
+      padding-bottom: 120px;
+    }
+  }
+  &__btn-btn {
+    display: flex;
+    width: 196px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8d24e;
+    color: #131313;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    border: 2px;
+    border-radius: 10px;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border: 2px solid #f8d24e;
+    }
+  }
+  &__btn-icon {
+    margin-left: 4px;
   }
 }
