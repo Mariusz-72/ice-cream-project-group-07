@@ -1,8 +1,26 @@
 .advantages {
-  background-color: $back-ice-green;
+  background-color: $olive-green;
+  &__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $button-yellow;
+  }
+  &__icon-body {
+    width: 36px;
+    height: 36px;
+  }
+  &__icon-title {
+    color: $title-white;
+    font-size: 36px;
+    font-weight: $font-weight-L;
+  }
+  &__icon-text {
+    color: $title-white;
+    font-size: $S-text-size;
+  }
 }
-.modal-video {
-}
+
 .crawler {
   display: none;
 }
