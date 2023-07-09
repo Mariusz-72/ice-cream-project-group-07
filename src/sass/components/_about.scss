@@ -1,3 +1,31 @@
 .about {
-  background-color: $back-ice-green;
+  background-color: $olive-green;
+  &__label {
+    font-size: $L-text-size;
+    color: $title-white;
+    font-weight: $font-weight-L;
+  }
+  &__title {
+    font-size: $XXL-text-size;
+    color: $title-white;
+    font-family: $font-special;
+  }
+  &__button-body {
+    background-color: $button-yellow;
+    color: $black;
+    font-size: $M-text-size;
+    font-weight: $font-wieght-M;
+    width: 164px;
+    height: 42px;
+    border-radius: 10px;
+  }
+}
+.cow {
+  &__img {
+    border-radius: 50%;
+  }
+  &__text {
+    font-size: $S-text-size;
+    color: $title-white;
+  }
 }
