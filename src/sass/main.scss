@@ -6,4 +6,7 @@
 // Style dla pliku z przykładem HTML fragmentu
 
 /**/
+
+@import './vars/globals';
+@import './vars/mixin.scss';
 @import './components/footer';
