@@ -1,0 +1,67 @@
+//  fonts  //
+$S-text-size: 12px;
+$M-text-size: 14px;
+$M-footer-size: 16px;
+$L-text-size: 18px;
+$XL-text-size: 20px;
+$XXL-text-size: 30px;
+$footer-text-size: 26px;
+$footer-accent-size: 34px;
+$footer-accent-xlsize: 48px;
+$footer-accent-xxlsize: 58px;
+$font-weight-XL: 700;
+$font-weight-footer: 500;
+$font-wieght-L: 400;
+$font-standard: 'Montserrat', sans-serif;
+$font-special: 'Seymour One', sans-serif;
+$font-footer: 'DM Sans', sans-serif;
+
+//  colors  //
+
+$olive-green: #84a178;
+$black: #000000;
+$footer-black: #131313;
+$button-yellow: #f8d24e;
+$title-white: #fcfcfc;
+$title-black: #131313;
+$background-orange: #d5753f;
+$back-ice-green: #5fa200;
+$back-ice-brown: #bc7440;
+$back-ice-rosa: #ee508f;
+$back-ice-yellow: #efd478;
+$footer-text-grey: #7a7a7a;
+$background-grey: #d9d9d9;
+
+// reset  //
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: $font-standard;
+  font-size: $M-text-size;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
