@@ -1,38 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>zadanie</title>
-    <link rel="stylesheet" href="css/main.min.css" type="text/css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
-  </head>
+ <!--Okno modalne + button About-->
   <body>
     <main>
-        <section class="section">
-            <div class="container">
-                <div>
-                    <button class="button" type="button" data-modal-open>Read more</button>
-                </div>
-            </div>
-        </section>
+       
+      <div>
+        <button type="button" data-modal-open>About</button>
+      </div>
+         
     </main>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal_btn-svg" type="modal-button"  data-modal-close>
             <svg  width="13" height="13">
-                <use href="./../images/icons.svg#icon-close-x"></use>
+                <use href="./images/icons.svg#icon-close-x"></use>
             </svg>
           </button>
           <form >
             <div class="forms">
               <legend class="forms_title">Chocolate icecream</legend>
               <div class="forms_img">
-                <img src="./../images/icecream.png" srcset="./../images/icecream@2x.png 2x" alt="Lody czekoladowe" 
+                <img src="./images/icecream.png" srcset="./images/icecream@2x.png 2x" alt="Lody czekoladowe" 
                 >
               </div>
               <div >
@@ -100,6 +88,6 @@
           </form>
         </div>
       </div>
-      <script src="./../js/modal.js"></script>
+      <script src="./js/modal.js"></script>
   </body>
 </html>

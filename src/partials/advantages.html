@@ -4,9 +4,9 @@
   <div class="container">
     <article class="about__title-box">
       <p class="about__label">TRADITION AND LOVE</p>
-      <h2 class="about__title">HOW IT'S MADE</h2>
+      <h2 class="about__title">HOW IT'S MADE?</h2>
     </article>
-    <figure class="cow">
+    <figure class="cow-box">
       <img
         src="/src/images/mobile/cow.jpg"
         alt="cow on grass"
@@ -19,6 +19,7 @@
           /src/images/desktop/x2/cow@x2.jpg 2400w
         "
         sizes="(min-width:480px) 480px,(min-width:768px) 768px,(min-width:1200px) 1200px"
+        class="cow__img"
       />
       <figcaption class="cow__box-text">
         <p class="cow__text">
@@ -34,32 +35,9 @@
       </figcaption>
     </figure>
     <div class="about__button">
-      <button class="about__button-body" type="button" data-modal-open>Read more</button>
+      <button class="about__button-body" type="button" data-modal-open>Read more ></button>
     </div>
   </div>
-  <!--Modal1234-->
-  <div class="backdrop is-hidden" data-modal>
-    <figure class="modal-video">
-      <iframe
-        src="https://www.youtube.com/embed/hO-7cz7gyAY"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        class="backdrop__video"
-      ></iframe>
-      <figcaption class="modal-video__text-box">
-        <p class="modal-video__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et
-        </p>
-      </figcaption>
-    </figure>
-    <button class="order__btn-close" type="button" data-modal-close>
-      <b>X</b>
-    </button>
-  </div>
-  <!--Modal^^-->
 </section>
 <section class="advantages">
   <h6 class="crawler">advantages</h6>
@@ -76,7 +54,7 @@
   </figure>
   <figure class="advantages__icon-box">
     <svg class="advantages__icon">
-      <use href="/src/images/how_made_icon.svg#icon-ketel"></use>
+      <use class="advantages__icon-body" href="/src/images/how_made_icon.svg#icon-ketel"></use>
     </svg>
     <figcaption class="advantages__icon-text-box">
       <h3 class="advantages__icon-title">16KG</h3>
@@ -87,7 +65,7 @@
   </figure>
   <figure class="advantages__icon-box">
     <svg class="advantages__icon">
-      <use href="/src/images/how_made_icon.svg#icon-ice-cream"></use>
+      <use class="advantages__icon-body" href="/src/images/how_made_icon.svg#icon-ice-cream"></use>
     </svg>
     <figcaption class="advantages__icon-text-box">
       <h3 class="advantages__icon-title">84</h3>
