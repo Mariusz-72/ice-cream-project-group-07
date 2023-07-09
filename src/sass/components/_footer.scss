@@ -1,11 +1,16 @@
 .footer {
-  background-color: $olive-green;
+  background-color: #84a178;
 
   &__wrapper {
     padding-inline: 20px;
     @include tablet {
       display: flex;
-      justify-content: space-between;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+    @include desktop {
+      padding-inline: 16px;
+      margin-bottom: 60px;
     }
   }
 
@@ -14,48 +19,84 @@
     padding-top: 60px;
 
     @include tablet {
-      padding-block: 40px 32px;
+      padding: 40px 66px 32px 33px;
       width: 50%;
     }
 
     @include desktop {
-      padding-block: 120px 60px;
+      padding-block: 138px 60px 138px 0;
     }
   }
 
   &__title {
-    font-family: $font-standard;
-    @include font($L-text-size, $font-weight-XL);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
     line-height: 1.2;
-    color: $title-white;
+    color: #fcfcfc;
 
     @include tablet {
-      @include font($footer-text-size, $font-weight-XL);
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-align: left;
       line-height: 1.2;
     }
 
     @include desktop {
-      @include font($XXL-text-size, $font-wieght-L);
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      text-align: left;
+
       line-height: 1.2;
     }
     &--accent {
-      font-family: $font-standard;
-      @include font($footer-accent-size, $font-weight-XL);
+      font-family: 'Montserrat';
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-align: left;
+
       line-height: 1.2;
-      color: $title-white;
+      color: #fcfcfc;
       margin-top: 16px;
 
       @include tablet {
-        @include font($footer-accent-xlsize, $font-weight-XL);
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-align: left;
+
         line-height: 1.2;
         margin-top: 8px;
       }
 
       @include desktop {
-        @include font($footer-accent-xxlsize, $font-weight-XL);
+        font-size: 58px;
+        font-weight: 700;
+
+        letter-spacing: 0.06em;
+        text-align: left;
+
         line-height: 1.2;
         margin-top: 14px;
       }
+    }
+  }
+
+  .social-wrapper {
+    @include tablet {
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    @include desktop {
+      display: block;
+      padding-top: 138px;
     }
   }
 
@@ -63,11 +104,13 @@
     padding-block: 60px 40px;
 
     @include tablet {
-      padding-block: 100px 60px;
+      padding-right: 0;
+      align-items: flex-end;
+      padding-block: 0;
     }
 
     @include desktop {
-      padding-block: 138px 60px;
+      padding-block: 60px 40px;
     }
 
     &__block {
@@ -76,24 +119,35 @@
       gap: 20px;
 
       @include tablet {
+        flex-direction: row;
+        justify-content: flex-end;
         gap: 30px;
+      }
+
+      @include desktop {
+        display: flex;
+        padding-bottom: 0;
+        gap: 30px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
       }
     }
     &__icon {
       width: 34px;
       height: 34px;
       border-radius: 50%;
-      background-color: $button-yellow;
+      background-color: #f8d24e;
       display: flex;
       justify-content: center;
       align-items: center;
-      fill: $olive-green;
+      fill: #84a178;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__item:hover .social-media__icon,
-    &__item:focus .social-media__icon {
-      fill: $title-white;
+    &__icon:hover,
+    &__icon:focus {
+      fill: #fcfcfc;
     }
   }
 
@@ -101,46 +155,64 @@
     display: flex;
     justify-content: flex-end;
     gap: 0.5em;
-    padding-top: 20px;
 
     @include tablet {
       padding-top: 34px;
     }
 
     @include desktop {
-      padding-top: 40px;
+      padding: 0;
     }
 
     &__paragraph {
-      font-family: $font-standard;
-      @include font($S-text-size, $font-weight-XL);
+      font-family: 'Montserrat';
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0em;
+      text-align: right;
+
       line-height: 1.9;
-      color: $footer-black;
+      color: #131313;
 
       @include tablet {
-        @include font($M-text-size, $font-weight-XL);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: right;
+
         line-height: 1.9;
       }
 
       @include desktop {
-        @include font($M-footer-size, $font-weight-XL);
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-align: left;
         line-height: 1.9;
       }
     }
 
     &__phone {
-      font-family: $font-footer;
-      @include font($S-text-size, $font-weight-footer);
+      font-family: 'DM Sans';
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0em;
+      text-align: right;
       line-height: 1.9;
-
-      color: $title-white;
+      color: #fcfcfc;
 
       @include tablet {
-        @include font($M-text-size, $font-weight-footer);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: right;
         line-height: 1.9;
 
         @include desktop {
-          @include font($M-footer-size, $font-weight-footer);
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 0.02em;
+          text-align: left;
           line-height: 1.9;
         }
       }
@@ -150,23 +222,41 @@
   .copyrights {
     padding-block: 20px;
     text-align: center;
-    border-top: 1px solid $horizontal-line-color;
-
+    border-top: 1px solid #e1e1e1;
     @include tablet {
       padding-block: 12px;
     }
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
   }
   &__paragraph {
-    color: $all-rights-text-color;
-    font-family: $montserrat-fonts;
-    @include font($fs14, $fw700, 0, 152%);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #7a7a7a;
 
     @include tablet {
-      @include font($fs14, $fw700, 0.28px, 186%);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.9;
+      letter-spacing: 0.02em;
+      text-align: left;
     }
 
     @include desktop {
-      @include font($fs12, $fw700, 0.24px, 186%);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.8;
+      letter-spacing: 0.02em;
+      text-align: left;
     }
   }
 }
