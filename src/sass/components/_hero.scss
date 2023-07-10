@@ -82,7 +82,7 @@
     }
 
     @include desktop {
-      max-width: 367px;;
+      width: 367px;;
       font-size: 38px;
       letter-spacing: 1.52px;
       margin-bottom: 32px;
@@ -90,6 +90,7 @@
   }
 
   // zastępcze
+
    &__main-list {
    	display: flex;
     align-items: baseline;
@@ -105,35 +106,32 @@
       margin-top: 3.75em;
       margin-bottom: 3.625em;
       }
-
-
    }
 
 
    &__main-link {
     color: #f8d24e;
+
+   	padding: 11px 26px;
+ 
+   	text-align: center;
+   	font-family: Montserrat;
+   	font-size: 12px;
+   	font-style: normal;
+   	font-weight: 600;
+   	line-height: 18px;
+   	border-radius: 8px;
+   	text-decoration: underline;
+   	&:hover {
+   		color: #0a8817;
+   	}
+   	&:focus {
+   		color: $title-white;
+   	}
+   	&:disabled {
+   		color: #ababab;
+  	}
    }
-  // &__main-link {
-  // 	padding: 11px 26px;
-  // 	color: $button-yellow;
-  // 	text-align: center;
-  // 	font-family: Montserrat;
-  // 	font-size: 12px;
-  // 	font-style: normal;
-  // 	font-weight: 600;
-  // 	line-height: 18px;
-  // 	border-radius: 8px;
-  // 	text-decoration: underline;
-  // 	&:hover {
-  // 		color: #0a8817;
-  // 	}
-  // 	&:focus {
-  // 		color: $title-white;
-  // 	}
-  // 	&:disabled {
-  // 		color: #ababab;
-  // 	}
-  // }
 
   &__buttons {
     display: flex;
