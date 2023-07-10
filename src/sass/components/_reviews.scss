@@ -1,12 +1,9 @@
-.slider {
+.section {
     max-width: 480px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     margin: 0 auto;
     height: 1037px;
-    background-image: url(../../images/customer-reviews/BackgroudMobile1x.jpg.jpg);
+    background-image: url(/src/images/customer-reviews/BackgroudMobile1x.jpg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -16,18 +13,18 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../../images/customer-reviews/BackgroudMobile2x.jpg.jpg);
+        background-image: url(/src/images/customer-reviews/BackgroudMobile2x.jpg.jpg);
     }
 
     @include tablet {
         max-width: 768px;
         background-repeat: no-repeat;
-        background-image: url(../../images/customer-reviews/BackgroundTablet1x.jpg\ \(2\).jpg);
+        background-image: url(/src/images/customer-reviews/BackgroundTablet1x.jpg\ \(2\).jpg);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../../images/customer-reviews/BackgroundTablet2x.jpg\ \(2\).jpg);
+            background-image: url(/src/images/customer-reviews/BackgroundTablet2x.jpg\ \(2\).jpg);
         }
     }
 
@@ -35,21 +32,28 @@
         max-width: 1600px;
         background-repeat: no-repeat;
         padding: 200px 0;
-        background-image: url(../../images/customer-reviews/BackgroudDesktop1x.jpg.jpg);
+        background-image: url(/src/images/customer-reviews/BackgroudDesktop1x.jpg.jpg);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../../images/customer-reviews/BackgroudDesktop2x.jpg.jpg);
+            background-image: url(/src/images/customer-reviews/BackgroudDesktop2x.jpg.jpg);
         }
     }
+}
 
-
-    &__slide {
-        width: 1000px;
-        height: 30px;
-
+.gallery {
+    &__image {
+        margin-top: -30px;
+        margin-bottom: 80px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
     }
+}
+
+.slider {
+
 
     &__image {
         width: 85px;
@@ -85,11 +89,4 @@
         margin-top: 32px;
     }
 
-    &__gallery {
-        margin-top: -30px;
-        margin-bottom: 80px;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-    }
 }
