@@ -12,14 +12,15 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  margin-top: 60px;
+  margin-top: -340px;
   @include tablet {
     flex-direction: row;
     justify-content: center;
-    // margin-top: -299px;
+    margin-top: -290px;
   }
   @include desktop {
     gap: 32px;
+    margin-top: -128px;
   }
 
   &__container {
@@ -137,7 +138,6 @@
   }
   &__btn-list {
     margin-top: 20px;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,12 +146,10 @@
       flex-direction: row;
       justify-content: center;
       padding-top: 40px;
-      padding-bottom: 40px;
       margin-top: 0;
     }
     @include desktop {
       padding-top: 60px;
-      padding-bottom: 120px;
     }
   }
   &__btn-btn {
