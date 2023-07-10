@@ -107,9 +107,31 @@
       margin-bottom: 3.625em;
       }
    }
+&__main-linkA {
+  color: #f8d24e;
+  padding: 11px 26px;
+ 
+   	text-align: center;
+   	font-family: Montserrat;
+   	font-size: 12px;
+   	font-style: normal;
+   	font-weight: 600;
+   	line-height: 18px;
+   	border-radius: 8px;
+    border: 1px solid #f8d24e;
 
+    &:hover {
+   		border-color: #0a8817;
+   	}
+   	&:focus {
+   		border-color: $title-white;
+   	}
+   	&:disabled {
+   		border-color: #ababab;
+  	}
+}
 
-   &__main-link {
+   &__main-linkB {
     color: #f8d24e;
 
    	padding: 11px 26px;
