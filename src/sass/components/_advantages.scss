@@ -22,10 +22,29 @@
     color: $title-white;
     font-size: 36px;
     font-weight: $font-weight-L;
+    margin-block: 16px;
+    @include tablet {
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+    @include desktop {
+      font-size: 58px;
+      line-height: normal;
+      letter-spacing: 2.32px;
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
   }
   &__icon-text {
     color: $title-white;
     font-size: $S-text-size;
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
   }
 }
 .wrapper-icon {
