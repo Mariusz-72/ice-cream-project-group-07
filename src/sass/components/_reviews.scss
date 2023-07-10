@@ -1,8 +1,9 @@
 .section {
     max-width: 480px;
+    display: block;
     width: 100%;
     margin: 0 auto;
-    height: 1037px;
+    height: 100%;
     background-image: url(/src/images/customer-reviews/BackgroudMobile1x.jpg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -47,7 +48,6 @@
         margin-top: -30px;
         margin-bottom: 80px;
         justify-content: center;
-        display: flex;
         align-items: center;
     }
 }
