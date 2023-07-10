@@ -1,14 +1,22 @@
 .advantages {
   background-color: $olive-green;
+  &__icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+  }
   &__icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: $button-yellow;
   }
-  &__icon-body {
-    width: 36px;
-    height: 36px;
+  &__icon-text-box {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    align-items: center;
   }
   &__icon-title {
     color: $title-white;
@@ -18,6 +26,19 @@
   &__icon-text {
     color: $title-white;
     font-size: $S-text-size;
+  }
+}
+.wrapper-icon {
+  @include tablet {
+    min-width: 768px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+  @include desktop {
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 

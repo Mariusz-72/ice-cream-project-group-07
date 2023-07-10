@@ -1,14 +1,51 @@
 .about {
   background-color: $olive-green;
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    @include tablet {
+      min-width: 454px;
+    }
+    @include desktop {
+      min-width: 481px;
+    }
+  }
   &__label {
     font-size: $L-text-size;
     color: $title-white;
     font-weight: $font-weight-L;
+    width: 210px;
+    @include tablet {
+      min-width: 454px;
+      font-size: 22px;
+      font-weight: $font-wieght-XL;
+      display: contents;
+    }
+    @include desktop {
+      font-size: 30px;
+    }
   }
   &__title {
     font-size: $XXL-text-size;
     color: $title-white;
     font-family: $font-special;
+    max-width: 210px;
+    @include tablet {
+      min-width: 454px;
+      font-size: 36px;
+    }
+    @include desktop {
+      font-size: 36px;
+      margin-top: 15px;
+    }
+  }
+  &__button {
+    margin-left: 32px;
+    @include desktop {
+      margin-top: 54px;
+    }
   }
   &__button-body {
     background-color: $button-yellow;
@@ -19,13 +56,70 @@
     height: 42px;
     border-radius: 10px;
   }
+  &__button-body:hover {
+    background-color: $olive-green;
+  }
+  &__button-body:focus {
+    background-color: $olive-green;
+    color: $title-white;
+  }
+  &__button-body:disabled {
+    background-color: #ababab;
+  }
 }
 .cow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
+    min-width: 454px;
+    display: flex;
+    flex-direction: row;
+  }
+  @include desktop {
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+  }
   &__img {
     border-radius: 50%;
+    margin-top: 54px;
+    min-width: 278px;
+    @include tablet {
+      max-width: 330px;
+    }
+    @include desktop {
+      min-width: 490px;
+      margin-top: 84px;
+    }
   }
-  &__text {
+  &__box-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 220px;
+    @include tablet {
+      min-width: 454px;
+      margin-left: 32px;
+    }
+    @include desktop {
+      min-width: none;
+    }
+  }
+  &__text-list {
     font-size: $S-text-size;
     color: $title-white;
+    word-spacing: 4px;
+    margin-bottom: 4px;
+    @include tablet {
+      margin-bottom: 8px;
+    }
+    @include desktop {
+      min-width: none;
+    }
+  }
+  &__box-list-last-item {
+    margin-bottom: 24px;
   }
 }
