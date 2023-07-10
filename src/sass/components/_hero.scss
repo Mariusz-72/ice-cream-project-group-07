@@ -81,6 +81,7 @@
     margin-bottom: 28px;
 
     @include desktop {
+      max-width: 367px;;
       font-size: 38px;
       letter-spacing: 1.52px;
       margin-bottom: 32px;
