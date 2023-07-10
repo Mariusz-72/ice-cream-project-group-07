@@ -85,31 +85,31 @@
   }
 
   // zastępcze
-  // &__main-list {
-  // 	display: flex;
-  // 	gap: 12px;
-  // }
-  // &__main-link {
-  // 	padding: 11px 26px;
-  // 	color: $button-yellow;
-  // 	text-align: center;
-  // 	font-family: Montserrat;
-  // 	font-size: 12px;
-  // 	font-style: normal;
-  // 	font-weight: 600;
-  // 	line-height: 18px;
-  // 	border-radius: 8px;
-  // 	text-decoration: underline;
-  // 	&:hover {
-  // 		color: #0a8817;
-  // 	}
-  // 	&:focus {
-  // 		color: $title-white;
-  // 	}
-  // 	&:disabled {
-  // 		color: #ababab;
-  // 	}
-  // }
+   &__main-list {
+   	display: flex;
+   	gap: 12px;
+   }
+   &__main-link {
+   	padding: 11px 26px;
+   	color: $button-yellow;
+   	text-align: center;
+   	font-family: Montserrat;
+   	font-size: 12px;
+   	font-style: normal;
+   	font-weight: 600;
+   	line-height: 18px;
+   	border-radius: 8px;
+   	text-decoration: underline;
+   	&:hover {
+   		color: #0a8817;
+   	}
+   	&:focus {
+   		color: $title-white;
+   	}
+   	&:disabled {
+   		color: #ababab;
+   	}
+   }
 
   &__buttons {
     display: flex;
