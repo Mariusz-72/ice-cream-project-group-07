@@ -66,11 +66,7 @@
     //width: 247px;
 
     height: 97px;
-    flex-direction: column;
-    flex-shrink: 0;
-
     color: $title-white;
-
     font-family: Seymour One;
     font-size: 26px;
     font-style: normal;
@@ -79,6 +75,10 @@
     letter-spacing: 1.04px;
     text-transform: uppercase;
     margin-bottom: 28px;
+
+    @include tablet {
+      margin-top:0;
+    }
 
     @include desktop {
       max-width: 367px;;
