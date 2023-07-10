@@ -63,8 +63,11 @@
   }
 
   &__title {
-    width: 247px;
+    //width: 247px;
+
     height: 97px;
+    flex-direction: column;
+    flex-shrink: 0;
 
     color: $title-white;
 
