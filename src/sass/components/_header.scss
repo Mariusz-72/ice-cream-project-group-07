@@ -9,8 +9,11 @@
 	}
 
 	&__mobile-menu {
-		background-color: transparent;
-		border: none;
+		display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        border: none;
+		margin: auto;
 		color: rgba(255, 255, 255, 1);
 		@include desktop {
 			display: none;
