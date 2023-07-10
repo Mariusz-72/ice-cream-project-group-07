@@ -63,11 +63,10 @@
   }
 
   &__title {
-    width: 247px;
+
+
     height: 97px;
-
     color: $title-white;
-
     font-family: Seymour One;
     font-size: 26px;
     font-style: normal;
@@ -77,40 +76,86 @@
     text-transform: uppercase;
     margin-bottom: 28px;
 
+    @include tablet {
+      margin-top:0;
+      width: 247px;
+    }
+
     @include desktop {
+      width: 367px;;
       font-size: 38px;
       letter-spacing: 1.52px;
       margin-bottom: 32px;
     }
   }
 
-  // zastępcze
-   &__main-list {
-   	display: flex;
-   	gap: 12px;
+
+  &__main-list {
+          display: flex;
+          align-items: baseline;
+          gap: 12px;
+          margin-top: 32px;
+      
+          @include tablet {
+        margin-top: 1.5em;
+        margin-bottom: 0.75em;
+        width:274px;
+        }
+
+        @include desktop {
+        margin-top: 80px;
+        margin-bottom: 3.625em;
+        }
+    }
+
+
+  &__main-linkA {
     color: #f8d24e;
-   }
-  // &__main-link {
-  // 	padding: 11px 26px;
-  // 	color: $button-yellow;
-  // 	text-align: center;
-  // 	font-family: Montserrat;
-  // 	font-size: 12px;
-  // 	font-style: normal;
-  // 	font-weight: 600;
-  // 	line-height: 18px;
-  // 	border-radius: 8px;
-  // 	text-decoration: underline;
-  // 	&:hover {
-  // 		color: #0a8817;
-  // 	}
-  // 	&:focus {
-  // 		color: $title-white;
-  // 	}
-  // 	&:disabled {
-  // 		color: #ababab;
-  // 	}
-  // }
+    padding: 11px 26px;
+  
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 18px;
+      border-radius: 8px;
+      border: 1px solid #f8d24e;
+
+      &:hover {
+        border-color: #0a8817;
+      }
+      &:focus {
+        border-color: $title-white;
+      }
+      &:disabled {
+        border-color: #ababab;
+      }
+  }
+
+  &__main-linkB {
+      color: #f8d24e;
+
+      padding: 11px 26px;
+  
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 18px;
+      border-radius: 8px;
+      text-decoration: underline;
+      &:hover {
+        color: #0a8817;
+      }
+      &:focus {
+        color: $title-white;
+      }
+      &:disabled {
+        color: #ababab;
+      }
+    }
 
   &__buttons {
     display: flex;
