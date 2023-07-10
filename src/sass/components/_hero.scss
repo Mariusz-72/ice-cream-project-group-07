@@ -27,17 +27,17 @@
       padding: 0 16px;
     }
 
-    background-image: url(/src/images/mobile/dotsMobile@2x.png);
+    background-image: url(/src/images/mobile/x2/dotsMobile@2x.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
 
     @include tablet {
-      background-image: url(/src/images/tablet/dotsTablet@2x.png);
+      background-image: url(/src/images/tablet/x2/dotsTablet@2x.png);
     }
 
     @include desktop {
-      background-image: url(/src/images/desktop/dotsDesktop@2x.png);
+      background-image: url(/src/images/desktop/x2/dotsDesktop@2x.png);
     }
   }
 
