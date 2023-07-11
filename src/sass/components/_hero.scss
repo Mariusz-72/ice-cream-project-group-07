@@ -9,9 +9,10 @@
     margin-left: auto;
     padding: 0 20px;
     background-image: url(/src/images/mobile/x2/dotsMobile@2x.png);
-    background-position-x: right  calc(((100vw - 480px)  - 1.5em)/ 2);
+    
     background-repeat: no-repeat;
     background-position: bottom;
+    background-position-x: right -30px;
     background-size: contain;
 
     @include minimobile {
@@ -372,10 +373,18 @@
     width: 177px;
     right: 20%;
 
+     @include minimobile {
+      width: 218px;
+      right: 20%;
+      
+    }
+
+
+
     @include mobile {
       width: 218px;
-      // right: 12%;
       right: 20%;
+      //right: 0%;
     }
 
     @include tablet {
