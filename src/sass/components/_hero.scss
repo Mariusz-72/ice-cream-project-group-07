@@ -8,6 +8,11 @@
     margin-right: auto;
     margin-left: auto;
     padding: 0 20px;
+    background-image: url(/src/images/mobile/x2/dotsMobile@2x.png);
+    background-position-x: right  calc(((100vw - 480px)  - 1.5em)/ 2);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 
     @include minimobile {
       min-width: 177px;
@@ -26,26 +31,17 @@
       min-height: 415px;
       padding: 0 32px;
       max-width: 100%;
+      background-image: url(/src/images/tablet/x2/dotsTablet@2x.png);
+
     }
 
     @include desktop {
       width: 1200px;
       min-height: 664px;
       padding: 0 16px;
-    }
-
-    background-image: url(/src/images/mobile/x2/dotsMobile@2x.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-
-    @include tablet {
-      background-image: url(/src/images/tablet/x2/dotsTablet@2x.png);
-    }
-
-    @include desktop {
       background-image: url(/src/images/desktop/x2/dotsDesktop@2x.png);
     }
+
   }
 
   &__content-wrap {
@@ -102,6 +98,7 @@
           align-items: baseline;
           gap: 12px;
           margin-top: 32px;
+          min-width: 110px;
       
           @include tablet {
         margin-top: 1.5em;
@@ -143,15 +140,15 @@
   &__main-linkB {
       color: #f8d24e;
 
-      padding: 11px 26px;
-  
+      //padding: 11px 26px;
+      
       text-align: center;
       font-family: Montserrat;
       font-size: 12px;
       font-style: normal;
       font-weight: 600;
       line-height: 18px;
-      border-radius: 8px;
+      
       text-decoration: underline;
       &:hover {
         color: #0a8817;
@@ -314,7 +311,10 @@
   }
 
   &__after-title {
-    color: red;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
 
     @include tablet {
       margin-bottom: 32px;
@@ -375,12 +375,12 @@
     @include mobile {
       width: 218px;
       // right: 12%;
-      right: 50px;
+      right: 20%;
     }
 
     @include tablet {
       width: 268px;
-      right: 8%;
+      right: 12%;
     }
 
     @include desktop {
