@@ -62,14 +62,36 @@
         </p>
         <button class="hero__link-btn" type="button">
           <svg class="hero__icon" width="8" height="8">
-            <use href="/src/images/icons.svg"></use>
+            <use href="/src/images/icons2.svg#icon-arrow"></use>
           </svg>
         </button>
       </div>
     </div>
 
     <div class="hero__image">
-    <picture>
+
+        <img class="hero__iceimgage" srcset="
+                              ./images/mobile/iceCreamMobile.png 177w,
+                              ./images/mobile/x2/iceCreamMobile@2x.png 354w,
+
+                              ./images/tablet/iceCreamTablet.png 268w,
+                              ./images/tablet/x2/iceCreamTablet@x2.png 536w,
+
+                              ./images/desktop/iceCreamDesktop.png 456w,
+                              ./images/desktop/x2/iceCreamDesktop@2x.png 912w"
+        
+        sizes="(min-width:1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 218px, (min-width: 320px) 177px, 100vw"
+        src="./images/mobile/iceCreamMobile.png" alt="ice cream smiling">
+        
+        
+        
+        
+
+
+
+
+
+<!--   <picture>
         <source
           srcset="
             /src/images/desktop/iceCreamDesktop.png       1x,
@@ -104,22 +126,7 @@
         />
         <img src="/src/images/mobile/x2/iceCreamMobile@2x.png" alt="ice-cream" />
       </picture>
-    
-              <!--<img
-                        src="../src/images/icecreamfotos/icemobilex1.jpg"
-                        alt="big icecream"
-                        
-                        srcset="
-                                ../src/images/icecreamfotos/icemobilex1.jpg  450w,
-                                ../src/images/icecreamfotos/icemobilex1.jpg  900w,
-                                ../src/images/icecreamfotos/icemobilex1.jpg  354w,
-                                ../src/images/icecreamfotos/icemobilex1.jpg  708w,
-                                ../src/images/icecreamfotos/icemobilex1.jpg  270w,
-                                ../src/images/icecreamfotos/icemobilex1.jpg  540w,
-                        "
-                        sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-                        />
-              -->
+-->
 
     </div>
   </div>

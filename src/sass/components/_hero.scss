@@ -8,37 +8,45 @@
     margin-right: auto;
     margin-left: auto;
     padding: 0 20px;
+    background-image: url(/src/images/mobile/x2/dotsMobile@2x.png);
+    
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: right 0px;
+    background-size: contain;
+
+    @include minimobile {
+      min-width: 177px;
+      //max-width: 320px;
+      height: 502px;
+    }
+
 
     @include mobile {
       min-width: 320px;
+      min-height: 415px;
       max-width: 480px;
-      min-height: 502px;
+      height: 502px;
+      background-position-x: right -50px;
     }
 
     @include tablet {
       min-height: 415px;
       padding: 0 32px;
       max-width: 100%;
+      background-image: url(/src/images/tablet/dotsTablet.png);
+      
+      
+
     }
 
     @include desktop {
       width: 1200px;
       min-height: 664px;
       padding: 0 16px;
-    }
-
-    background-image: url(/src/images/mobile/x2/dotsMobile@2x.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-
-    @include tablet {
-      background-image: url(/src/images/tablet/x2/dotsTablet@2x.png);
-    }
-
-    @include desktop {
       background-image: url(/src/images/desktop/x2/dotsDesktop@2x.png);
     }
+
   }
 
   &__content-wrap {
@@ -95,6 +103,7 @@
           align-items: baseline;
           gap: 12px;
           margin-top: 32px;
+          min-width: 110px;
       
           @include tablet {
         margin-top: 1.5em;
@@ -136,21 +145,21 @@
   &__main-linkB {
       color: #f8d24e;
 
-      padding: 11px 26px;
-  
+      //padding: 11px 26px;
+      
       text-align: center;
       font-family: Montserrat;
       font-size: 12px;
       font-style: normal;
       font-weight: 600;
       line-height: 18px;
-      border-radius: 8px;
+      
       text-decoration: underline;
       &:hover {
         color: #0a8817;
       }
       &:focus {
-        color: $title-white;
+        color:#0a8817;
       }
       &:disabled {
         color: #ababab;
@@ -307,23 +316,34 @@
   }
 
   &__after-title {
-    color: red;
+    
 
     @include tablet {
       margin-bottom: 32px;
+      color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    width: 165px;
+    
       // @include fonts(null, 12, 1.4);
     }
 
     @include desktop {
       margin-bottom: 32px;
+      color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
       // @include fonts(null, 14, 1.4);
     }
   }
 
   &__link-btn {
-    color: red;
+    color: #fff;
     display: block;
     background-color: transparent;
+    border: none;
     margin: 0;
 
     &:hover > .hero__icon {
@@ -347,7 +367,7 @@
     transition-property: width;
   }
 
-  &__image {
+  /*&__image {
     position: relative;
     margin-left: 83px;
     z-index: 5;
@@ -356,5 +376,40 @@
       margin: 0;
       width: 90%;
     }
+  }*/
+
+  &__image
+  {
+    position:absolute;
+    bottom: 0;
+    width: 177px;
+    //right: 20%;
+
+     @include minimobile {
+      width: 177px;
+      right: 8%;
+      
+    }
+
+
+
+    @include mobile {
+      width: 218px;
+      right: 15%;
+      //right: 0%;
+    }
+
+    @include tablet {
+      width: 268px;
+      right: 9%;
+    }
+
+    @include desktop {
+      width: 456px;
+      right: 7%;
+    }
   }
+
+
+  
 }
