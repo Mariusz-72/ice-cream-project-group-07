@@ -45,9 +45,9 @@
 
 .gallery {
     display: block;
-    max-width: 100%;
-    height: auto;
-
+    max-width: 80%;
+    margin: 0 auto;
+    
     &__photo {
         border-radius: 10px;
         justify-content: center;
