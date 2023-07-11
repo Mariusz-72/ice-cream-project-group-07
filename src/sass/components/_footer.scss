@@ -149,19 +149,13 @@
         fill: #84a178;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
-
-      &__com:focus .social-media__icon {
+      &__com:hover,
+      &__com:focus {
         fill: #fcfcfc;
-      }
-
-      &__com:hover .social-media__icon {
-        @include desktop {
-          fill: #fcfcfc;
-        }
       }
     }
 
-    .contact {
+    .connect {
       display: flex;
       justify-content: flex-end;
       gap: 0.5em;
