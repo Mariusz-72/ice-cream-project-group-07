@@ -1,111 +1,119 @@
-.section {
-    max-width: 480px;
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    background-image: url(/src/images/reviews/BackgroudMobile1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.bg {
+  background-image: url(/src/images/reviews/BackgroudMobile1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 413px;
+  @include tablet {
+    padding-bottom: 379px;
+  }
+  @include desktop {
+    padding-bottom: 228px;
+  }
 
-
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(/src/images/reviews/BackgroudMobile2x.jpg);
+  .bg {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/src/images/reviews/BackgroudMobile2x.jpg);
     }
 
     @include tablet {
-        max-width: 768px;
-        background-repeat: no-repeat;
-        background-image: url(/src/images/reviews/BackgroundTablet1x.jpg);
+      max-width: 768px;
+      background-repeat: no-repeat;
+      background-image: url(/src/images/reviews/BackgroundTablet1x.jpg);
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(/src/images/reviews/BackgroundTablet2x.jpg);
-        }
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(/src/images/reviews/BackgroundTablet2x.jpg);
+      }
     }
 
     @include desktop {
-        max-width: 1200px;
-        background-repeat: no-repeat;
-        background-image: url(/src/images/reviews/BackgroudDesktop1x.jpg);
+      max-width: 1200px;
+      background-repeat: no-repeat;
+      background-image: url(/src/images/reviews/BackgroudDesktop1x.jpg);
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(/src/images/reviews/BackgroudDesktop2x.jpg);
-        }
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(/src/images/reviews/BackgroudDesktop2x.jpg);
+      }
     }
-}
+  }
 
-.gallery {
+  .gallery {
     display: block;
     max-width: 80%;
     margin: 0 auto;
-    
 
-    
     &__image {
-        margin-top: -30%;
-        margin-bottom: 80px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-    }
-}
+      margin-bottom: 80px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
 
-.slider {
+      position: relative;
+      top: -32px;
+      @include tablet {
+        top: -144px;
+      }
+      @include tablet {
+        top: -98px;
+      }
+    }
+  }
+
+  .slider {
     flex-direction: column;
     align-items: center;
     gap: 20px;
     display: flex;
+    margin-bottom: 413px;
+    @include tablet {
+      margin-bottom: 379px;
+    }
+    @include desktop {
+      margin-bottom: 228px;
+    }
 
     &__image {
-        width: 85px;
-        height: 85px;
-        border-radius: 50%;
-        margin-bottom: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     &__text {
-        background-color: #84A178;
-        color: #FCFCFC;
-        width: 280px;
-        height: 256px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        line-height: 2.55;
-        letter-spacing: 0.03em;
-        padding: 20px;
-        text-align: center;
-        font-size: 12px;
-        font-weight: 400;
+      background-color: #84a178;
+      color: #fcfcfc;
+      width: 280px;
+      height: 256px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 2.55;
+      letter-spacing: 0.03em;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
 
-        @include tablet {
-                width: 705px;
-                height: 138px;
-            }
-        
-        @include desktop {
-                width: 968px;
-                height: 138px;
-            }
+      @include tablet {
+        width: 705px;
+        height: 138px;
+      }
+
+      @include desktop {
+        width: 968px;
+        height: 138px;
+      }
     }
 
     &__heading {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.86;
-        margin-top: 32px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.86;
+      margin-top: 32px;
     }
-
+  }
 }
