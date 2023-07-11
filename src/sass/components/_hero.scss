@@ -365,7 +365,7 @@
     width: 177px;
     right: 20%;
 
-    @include mobile_2 {
+    @include mobile {
       width: 218px;
       // right: 12%;
       right: 0;
