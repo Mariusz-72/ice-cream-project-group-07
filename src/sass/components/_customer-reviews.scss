@@ -64,13 +64,6 @@
     align-items: center;
     gap: 20px;
     display: flex;
-    margin-bottom: 413px;
-    @include tablet {
-      margin-bottom: 379px;
-    }
-    @include desktop {
-      margin-bottom: 228px;
-    }
 
     &__image {
       width: 85px;
