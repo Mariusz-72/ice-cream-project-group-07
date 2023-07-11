@@ -347,7 +347,7 @@
     transition-property: width;
   }
 
-  &__image {
+  /*&__image {
     position: relative;
     margin-left: 83px;
     z-index: 5;
@@ -356,5 +356,32 @@
       margin: 0;
       width: 90%;
     }
+  }*/
+
+  &__image
+  {
+    position:absolute;
+    bottom: 0;
+    width: 177px;
+    right: 20%;
+
+    @include mobile_2 {
+      width: 218px;
+      // right: 12%;
+      right: 0;
+    }
+
+    @include tablet {
+      width: 268px;
+      right: 8%;
+    }
+
+    @include desktop {
+      width: 456px;
+      right: 7%;
+    }
   }
+
+
+  
 }
