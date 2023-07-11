@@ -44,11 +44,25 @@
 }
 
 .gallery {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    &__photo {
+        border-radius: 10px;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+
     &__image {
-        margin-top: -30px;
+        margin-top: -30%;
         margin-bottom: 80px;
         justify-content: center;
         align-items: center;
+        z-index: 2;
+        display: block;
+        position: relative;
     }
 }
 
