@@ -26,9 +26,8 @@
   &__container {
     width: 280px;
     height: 412px;
-    background-color: aliceblue;
+    background-color: #fff;
     border-radius: 24px;
-    background: #fcfcfc;
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
     padding: 32px 24px;
 
@@ -116,6 +115,16 @@
     @include tablet {
       width: 173px;
       height: 71px;
+    }
+  }
+  &__details {
+    line-height: 1.83;
+    letter-spacing: 0.48px;
+    color: #d6936d;
+    display: block;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
   }
   &__under-line {
