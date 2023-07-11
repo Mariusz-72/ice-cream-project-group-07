@@ -38,6 +38,7 @@
   &__icon-text {
     color: $title-white;
     font-size: $S-text-size;
+    text-align: center;
     @include tablet {
       font-size: 14px;
     }

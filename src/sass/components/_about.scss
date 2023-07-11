@@ -17,6 +17,7 @@
     color: $title-white;
     font-weight: $font-weight-L;
     width: 210px;
+    text-align: center;
     @include tablet {
       min-width: 454px;
       font-size: 22px;
@@ -32,6 +33,7 @@
     color: $title-white;
     font-family: $font-special;
     max-width: 210px;
+    text-align: center;
     @include tablet {
       min-width: 454px;
       font-size: 36px;
@@ -116,6 +118,7 @@
     color: $title-white;
     margin-bottom: 4px;
     letter-spacing: 1px;
+    text-align: center;
     @include tablet {
       margin-bottom: 8px;
     }
