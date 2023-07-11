@@ -12,7 +12,7 @@
     
     background-repeat: no-repeat;
     background-position: bottom;
-    background-position-x: right -30px;
+    background-position-x: right 0px;
     background-size: contain;
 
     @include minimobile {
@@ -24,15 +24,19 @@
 
     @include mobile {
       min-width: 320px;
+      min-height: 415px;
       max-width: 480px;
       height: 502px;
+      background-position-x: right -50px;
     }
 
     @include tablet {
       min-height: 415px;
       padding: 0 32px;
       max-width: 100%;
-      background-image: url(/src/images/tablet/x2/dotsTablet@2x.png);
+      background-image: url(/src/images/tablet/dotsTablet.png);
+      
+      
 
     }
 
@@ -312,18 +316,25 @@
   }
 
   &__after-title {
-    color: #fff;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 140%;
+    
 
     @include tablet {
       margin-bottom: 32px;
+      color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    width: 165px;
+    
       // @include fonts(null, 12, 1.4);
     }
 
     @include desktop {
       margin-bottom: 32px;
+      color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
       // @include fonts(null, 14, 1.4);
     }
   }
@@ -371,11 +382,11 @@
     position:absolute;
     bottom: 0;
     width: 177px;
-    right: 20%;
+    //right: 20%;
 
      @include minimobile {
-      width: 218px;
-      right: 20%;
+      width: 177px;
+      right: 8%;
       
     }
 
@@ -383,13 +394,13 @@
 
     @include mobile {
       width: 218px;
-      right: 20%;
+      right: 15%;
       //right: 0%;
     }
 
     @include tablet {
       width: 268px;
-      right: 12%;
+      right: 9%;
     }
 
     @include desktop {
