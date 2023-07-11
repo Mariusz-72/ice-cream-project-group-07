@@ -340,9 +340,10 @@
   }
 
   &__link-btn {
-    color: red;
+    color: #fff;
     display: block;
     background-color: transparent;
+    border: none;
     margin: 0;
 
     &:hover > .hero__icon {
