@@ -1,16 +1,30 @@
 .footer {
   background-color: #84a178;
 
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 82px;
+    height: 1px;
+    width: 100%;
+    background-color: #84a178;
+
+    @include tablet {
+      bottom: 50px;
+    }
+
+    @include desktop {
+      bottom: 44px;
+      width: 1168px;
+      left: calc((100vw - 1168px) / 2);
+    }
+  }
+
   &__wrapper {
-    padding-inline: 20px;
     @include tablet {
       display: flex;
-      align-items: baseline;
-      justify-content: space-around;
-    }
-    @include desktop {
-      padding-inline: 16px;
-      margin-bottom: 60px;
+      justify-content: space-between;
     }
   }
 
@@ -19,12 +33,12 @@
     padding-top: 60px;
 
     @include tablet {
-      padding: 40px 66px 32px 33px;
+      padding-block: 40px 32px;
       width: 50%;
     }
 
     @include desktop {
-      padding-block: 138px 60px 138px 0;
+      padding-block: 120px 60px;
     }
   }
 
@@ -96,140 +110,133 @@
   }
 
   .social-wrapper {
-    @include tablet {
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-    }
-
-    @include desktop {
-      display: block;
-      padding-top: 138px;
-    }
-  }
-
-  .social-media {
+    display: flex;
+    flex-direction: column;
     padding-block: 60px 40px;
 
     @include tablet {
-      padding-right: 0;
-      align-items: flex-end;
-      padding-block: 0;
+      padding-block: 100px 60px;
     }
 
     @include desktop {
-      padding-block: 60px 40px;
+      padding-block: 138px 60px;
     }
 
-    &__block {
+    .social-media {
+      padding: 1px;
+
+      &__block {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+
+        @include tablet {
+          gap: 30px;
+        }
+      }
+
+      &__wrapper {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: #f8d24e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__icon {
+        fill: #84a178;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      &__com:focus .social-media__icon {
+        fill: #fcfcfc;
+      }
+
+      &__com:hover .social-media__icon {
+        @include desktop {
+          fill: #fcfcfc;
+        }
+      }
+    }
+
+    .contact {
       display: flex;
       justify-content: flex-end;
-      gap: 20px;
-
+      gap: 0.5em;
+      padding-top: 20px;
       @include tablet {
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 30px;
+        padding-top: 34px;
       }
 
       @include desktop {
-        display: flex;
-        padding-bottom: 0;
-        gap: 30px;
-        align-items: center;
-        flex-direction: row;
-        justify-content: flex-end;
+        padding-top: 40px;
       }
-    }
-    &__icon {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background-color: #f8d24e;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      fill: #84a178;
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 
-    &__icon:hover,
-    &__icon:focus {
-      fill: #fcfcfc;
-    }
-  }
-
-  .contact {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.5em;
-
-    @include tablet {
-      padding-top: 34px;
-    }
-
-    @include desktop {
-      padding: 0;
-    }
-
-    &__paragraph {
-      font-family: 'Montserrat';
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0em;
-      text-align: right;
-      line-height: 1.9;
-      color: #131313;
-
-      @include tablet {
-        font-size: 14px;
+      &__paragraph {
+        font-family: 'Montserrat';
+        font-size: 12px;
         font-weight: 700;
         letter-spacing: 0em;
-        text-align: right;
-
         line-height: 1.9;
+        color: #131313;
+
+        @include tablet {
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 0em;
+          line-height: 1.9;
+        }
+
+        @include desktop {
+          font-size: 16px;
+          font-weight: 700;
+          letter-spacing: 0.02em;
+          line-height: 1.9;
+        }
       }
 
-      @include desktop {
-        font-size: 16px;
-        font-weight: 700;
-        letter-spacing: 0.02em;
-        text-align: left;
-        line-height: 1.9;
-      }
-    }
-
-    &__phone {
-      font-family: 'DM Sans';
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0em;
-      text-align: right;
-      line-height: 1.9;
-      color: #fcfcfc;
-
-      @include tablet {
-        font-size: 14px;
+      &__phone {
+        font-family: 'DM Sans';
+        font-size: 12px;
         font-weight: 500;
         letter-spacing: 0em;
-        text-align: right;
         line-height: 1.9;
-      }
-      @include desktop {
-        font-size: 16px;
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        text-align: left;
-        line-height: 1.9;
+        color: #fcfcfc;
+        transform: scale(1);
+        transition: transform 250ms ease-in-out;
+
+        @include tablet {
+          font-size: 14px;
+          font-weight: 500;
+          letter-spacing: 0em;
+          line-height: 1.9;
+        }
+        @include desktop {
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 0.02em;
+          line-height: 1.9;
+        }
+        &:focus {
+          transform: scale(1.1);
+        }
+
+        &:hover {
+          @include desktop {
+            transform: scale(1.1);
+          }
+        }
       }
     }
   }
-
   .copyrights {
     margin-top: 30px;
     padding-block: 20px;
     text-align: center;
     border-top: 1px solid #e1e1e1;
+
     @include tablet {
       padding-block: 12px;
       display: flex;
@@ -243,30 +250,29 @@
       padding-top: 12px;
       padding-bottom: 12px;
     }
-  }
-  &__paragraph {
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #7a7a7a;
 
-    @include tablet {
+    &__paragraph {
+      font-family: 'Montserrat';
       font-size: 14px;
       font-weight: 700;
-      line-height: 1.9;
-      letter-spacing: 0.02em;
-      text-align: left;
-    }
+      line-height: 1.5;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #7a7a7a;
 
-    @include desktop {
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 1.8;
-      letter-spacing: 0.02em;
-      text-align: left;
+      @include tablet {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.9;
+        letter-spacing: 0.02em;
+      }
+
+      @include desktop {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.8;
+        letter-spacing: 0.02em;
+      }
     }
   }
 }
