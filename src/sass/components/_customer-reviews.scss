@@ -30,7 +30,7 @@
     }
 
     @include desktop {
-        max-width: 1600px;
+        max-width: 1200px;
         background-repeat: no-repeat;
         background-image: url(/src/images/reviews/BackgroudDesktop1x.jpg);
 
@@ -40,12 +40,6 @@
             background-image: url(/src/images/reviews/BackgroudDesktop2x.jpg);
         }
     }
-}
-
-.container {
-    justify-content: center;
-    display: flex;
-    top: 100px px;
 }
 
 .gallery {
@@ -60,6 +54,7 @@
         margin-bottom: 80px;
         justify-content: center;
         align-items: center;
+        border-radius: 10px;
     }
 }
 
@@ -67,7 +62,6 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin: 150px 0 450px;
     display: flex;
 
     &__image {
