@@ -3,7 +3,7 @@
     display: block;
     width: 100%;
     margin: 0 auto;
-    height: 100%;
+    height: auto;
     background-image: url(/src/images/reviews/BackgroudMobile1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -32,7 +32,6 @@
     @include desktop {
         max-width: 1600px;
         background-repeat: no-repeat;
-        padding: 200px 0;
         background-image: url(/src/images/reviews/BackgroudDesktop1x.jpg);
 
         @media (min-device-pixel-ratio: 2),
@@ -44,8 +43,49 @@
 }
 
 .gallery {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+
+    background-image: url(/src/images/reviews/lodyMobile1x.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+    
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(/src/images/reviews/lodyMobile2x.jpg);
+        }
+    
+        @include tablet {
+            max-width: 768px;
+            background-repeat: no-repeat;
+            background-image: url(/src/images/reviews/lodyTablet1x.jpg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(/src/images/reviews/lodyTablet2x.jpg);
+            }
+        }
+    
+        @include desktop {
+            max-width: 1600px;
+            background-repeat: no-repeat;
+            background-image: url(/src/images/reviews/lodyDesktop1x.jpg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(/src/images/reviews/lodyDesktop2x.jpg);
+            }
+        }
     &__image {
-        margin-top: -30px;
+        margin-top: -30%;
         margin-bottom: 80px;
         justify-content: center;
         align-items: center;
@@ -53,7 +93,11 @@
 }
 
 .slider {
-
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 150px 0 450px;
+    display: flex;
 
     &__image {
         width: 85px;
@@ -80,6 +124,16 @@
         text-align: center;
         font-size: 12px;
         font-weight: 400;
+
+        @include tablet {
+                width: 705px;
+                height: 138px;
+            }
+        
+        @include desktop {
+                width: 968px;
+                height: 138px;
+            }
     }
 
     &__heading {
