@@ -42,53 +42,28 @@
     }
 }
 
+.container {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 100px px;
+}
+
 .gallery {
     display: block;
-    max-width: 100%;
-    height: auto;
+    max-width: 80%;
+    margin: 0 auto;
     
 
-    background-image: url(/src/images/reviews/lodyMobile1x.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
     
-    
-    
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(/src/images/reviews/lodyMobile2x.jpg);
-        }
-    
-        @include tablet {
-            max-width: 768px;
-            background-repeat: no-repeat;
-            background-image: url(/src/images/reviews/lodyTablet1x.jpg);
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(/src/images/reviews/lodyTablet2x.jpg);
-            }
-        }
-    
-        @include desktop {
-            max-width: 1600px;
-            background-repeat: no-repeat;
-            background-image: url(/src/images/reviews/lodyDesktop1x.jpg);
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(/src/images/reviews/lodyDesktop2x.jpg);
-            }
-        }
     &__image {
         margin-top: -30%;
         margin-bottom: 80px;
         justify-content: center;
         align-items: center;
+        z-index: 2;
+        display: block;
+        position: relative;
     }
 }
 
