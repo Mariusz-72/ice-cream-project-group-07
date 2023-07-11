@@ -16,7 +16,11 @@
         {@content;}
 }
 
-
+@mixin minimobile 
+{
+        @media screen and (min-width: 177px)
+        {@content;}
+}
 
 
 @mixin doubledppx 

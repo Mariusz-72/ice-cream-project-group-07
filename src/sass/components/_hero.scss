@@ -9,10 +9,17 @@
     margin-left: auto;
     padding: 0 20px;
 
+    @include minimobile {
+      min-width: 177px;
+      //max-width: 320px;
+      height: 502px;
+    }
+
+
     @include mobile {
       min-width: 320px;
       max-width: 480px;
-      min-height: 502px;
+      height: 502px;
     }
 
     @include tablet {
@@ -150,7 +157,7 @@
         color: #0a8817;
       }
       &:focus {
-        color: $title-white;
+        color:#0a8817;
       }
       &:disabled {
         color: #ababab;
@@ -368,7 +375,7 @@
     @include mobile {
       width: 218px;
       // right: 12%;
-      right: 0;
+      right: 50px;
     }
 
     @include tablet {
