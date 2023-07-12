@@ -131,4 +131,9 @@
   &__box-list-last-item {
     margin-bottom: 24px;
   }
+  .--cow__text-list {
+    @include tablet {
+      text-align: left;
+    }
+  }
 }
