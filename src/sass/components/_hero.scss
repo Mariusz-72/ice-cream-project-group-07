@@ -1,5 +1,6 @@
 .hero {
   background-color: rgba(132, 161, 120, 1);
+
   &__container {
     position: relative;
     display: flex;
@@ -37,14 +38,15 @@
     }
 
     @include desktop {
-      width: 1200px;
+      max-width: 1200px;
       min-height: 664px;
-      padding: 0 16px;
+      padding: 0;
       background-image: url(/src/images/desktop/x2/dotsDesktop@2x.png);
     }
   }
 
   &__content-wrap {
+    position: relative;
     justify-content: space-between;
     align-items: flex-end;
     display: flex;
@@ -164,7 +166,6 @@
   }
 
   &__button {
-    color: #000000;
     color: #000;
     text-align: center;
     font-family: Montserrat;
@@ -217,6 +218,9 @@
 
     @include tablet {
       display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
   }
 
@@ -265,9 +269,10 @@
   }
 
   &__wrap-plate {
+    position: relative;
     display: flex;
-    align-items: flex-end;
-    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
     @include tablet {
       position: absolute;
@@ -291,10 +296,10 @@
     @include tablet {
       max-width: 151px;
       display: block;
-
-      @include desktop {
-        max-width: 200px;
-      }
+    }
+    @include desktop {
+      
+      max-width: 200px;
     }
   }
 
@@ -314,8 +319,6 @@
       font-weight: 400;
       line-height: 140%;
       width: 165px;
-
-    
     }
 
     @include desktop {
@@ -324,7 +327,6 @@
       font-size: 12px;
       font-weight: 400;
       line-height: 140%;
-    
     }
   }
 
