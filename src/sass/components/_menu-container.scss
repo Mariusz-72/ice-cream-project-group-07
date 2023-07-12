@@ -28,10 +28,13 @@
     justify-content: center;
     width: auto;
     max-width: fit-content;
-    margin: 30% 0% 50% 15%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20%;
     @include tablet {
         display: block;
-        margin: 20% 0% 0 35%;
+        margin-right: auto;
+        margin-left: auto;
 
     }
     &_nav {
