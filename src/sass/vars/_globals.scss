@@ -78,6 +78,7 @@ a {
   opacity: 1;
   transform: scale;
   visibility: visible;
+  z-index: 10;
 }
 .modal {
   position: absolute;
