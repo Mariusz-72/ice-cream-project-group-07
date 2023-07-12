@@ -40,7 +40,7 @@
     @include desktop {
       max-width: 1200px;
       min-height: 664px;
-      
+
       padding: 0 16px;
       background-image: url(/src/images/desktop/x2/dotsDesktop@2x.png);
     }
@@ -299,13 +299,25 @@
       display: block;
     }
     @include desktop {
-      
       max-width: 200px;
     }
   }
 
   &__plate-img {
     display: none;
+    animation: rotation 10s infinite;
+
+    @keyframes rotation {
+      0%,
+      100% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-in-out;
+      }
+      50% {
+        transform: rotate(360deg);
+        animation-timing-function: ease-in-out;
+      }
+    }
 
     @include tablet {
       display: block;
