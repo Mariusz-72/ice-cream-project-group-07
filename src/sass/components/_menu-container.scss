@@ -28,9 +28,11 @@
     justify-content: center;
     width: auto;
     max-width: fit-content;
-    margin: 50% 0% 50% 20%;
+    margin: 30% 0% 50% 15%;
     @include tablet {
         display: block;
+        margin: 20% 0% 0 35%;
+
     }
     &_nav {
         display:flex;
