@@ -4,9 +4,33 @@
   right: 0;
   background-color: rgba(132, 161, 120, 1);
   z-index: 999;
+  &__button {
+    display: none;
+    @include tablet {
+      display: flex;
+      padding: 10px 30px;
+      border: none;
+      color: #000;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      border-radius: 10px;
+      background-color: rgba(248, 210, 78, 1);
+    }
+    @include desktop {
+      margin-right: 0;
+    }
+  }
   &__container {
     position: relative;
+    @include tablet {
+      padding: 0 32px;
+    }
     @include desktop {
+      padding: 0 16px;
       width: 1200px;
     }
   }
@@ -24,25 +48,11 @@
   }
 }
 
-.button {
-  display: none;
-  @include tablet {
-    display: flex;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(248, 210, 78, 1);
-  }
-  @include desktop{
-    margin-right: 0;
-  }
-}
-
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 20px 0px;
+  padding-top:14px;
   &__buttons-list {
     display: flex;
     gap: 30px;

@@ -40,7 +40,8 @@
     @include desktop {
       max-width: 1200px;
       min-height: 664px;
-      padding: 0;
+      
+      padding: 0 16px;
       background-image: url(/src/images/desktop/x2/dotsDesktop@2x.png);
     }
   }
