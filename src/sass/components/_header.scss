@@ -6,6 +6,9 @@
   z-index: 999;
   &__container {
     position: relative;
+    @include desktop {
+      width: 1200px;
+    }
   }
 
   &__mobile-menu {
@@ -29,6 +32,9 @@
     border: none;
     border-radius: 10px;
     background-color: rgba(248, 210, 78, 1);
+  }
+  @include desktop{
+    margin-right: 0;
   }
 }
 
