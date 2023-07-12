@@ -24,17 +24,35 @@
     }
 }
 .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 28px;
+    display: block;
+    justify-content: center;
+    width: auto;
+    max-width: fit-content;
+    margin: 50% 0% 50% 20%;
+    @include tablet {
+        display: block;
+    }
     &_nav {
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         max-width: fit-content;
-        gap: 36px;
+        gap: 32px;
+    }
+    &_nav-item {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 16px;
+        color: #FFFFFF; 
+    }
+    &_nav-item-black {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 16px;
+        color: #131313; 
     }
 
 }
