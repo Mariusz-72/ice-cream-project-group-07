@@ -128,6 +128,11 @@
       letter-spacing: 0.64px;
     }
   }
+  .--cow__text-list {
+    @include tablet {
+      text-align: left;
+    }
+  }
   &__box-list-last-item {
     margin-bottom: 24px;
   }
