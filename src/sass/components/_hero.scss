@@ -9,7 +9,7 @@
     margin-left: auto;
     padding: 0 20px;
     background-image: url(/src/images/mobile/x2/dotsMobile@2x.png);
-    
+
     background-repeat: no-repeat;
     background-position: bottom;
     background-position-x: right 0px;
@@ -20,7 +20,6 @@
       //max-width: 320px;
       height: 502px;
     }
-
 
     @include mobile {
       min-width: 320px;
@@ -35,9 +34,6 @@
       padding: 0 32px;
       max-width: 100%;
       background-image: url(/src/images/tablet/dotsTablet.png);
-      
-      
-
     }
 
     @include desktop {
@@ -46,7 +42,6 @@
       padding: 0 16px;
       background-image: url(/src/images/desktop/x2/dotsDesktop@2x.png);
     }
-
   }
 
   &__content-wrap {
@@ -57,22 +52,20 @@
 
   &__main-content {
     max-width: 300px;
-    padding: 110px 0 0 20px;
+    padding: 44px 0 0 20px;
 
     @include tablet {
       max-width: 250px;
-      padding: 104px 32px 0px 32px;
+      padding: 14px 32px 0px 32px;
     }
 
     @include desktop {
       max-width: 400px;
-      padding: 118px 16px 0px 16px;
+      padding: 16px 16px 0px 16px;
     }
   }
 
   &__title {
-
-
     height: 97px;
     color: $title-white;
     font-family: Seymour One;
@@ -85,86 +78,84 @@
     margin-bottom: 28px;
 
     @include tablet {
-      margin-top:0;
+      margin-top: 0;
       width: 247px;
     }
 
     @include desktop {
-      width: 367px;;
+      width: 367px;
       font-size: 38px;
       letter-spacing: 1.52px;
       margin-bottom: 32px;
     }
   }
 
-
   &__main-list {
-          display: flex;
-          align-items: baseline;
-          gap: 12px;
-          margin-top: 32px;
-          min-width: 110px;
-      
-          @include tablet {
-        margin-top: 1.5em;
-        margin-bottom: 0.75em;
-        width:274px;
-        }
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-top: 32px;
+    min-width: 110px;
 
-        @include desktop {
-        margin-top: 80px;
-        margin-bottom: 3.625em;
-        }
+    @include tablet {
+      margin-top: 1.5em;
+      margin-bottom: 0.75em;
+      width: 274px;
     }
 
+    @include desktop {
+      margin-top: 80px;
+      margin-bottom: 3.625em;
+    }
+  }
 
   &__main-linkA {
-    color: #f8d24e;
+    color: $black;
     padding: 11px 26px;
-  
-      text-align: center;
-      font-family: Montserrat;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 18px;
-      border-radius: 8px;
-      border: 1px solid #f8d24e;
 
-      &:hover {
-        border-color: #0a8817;
-      }
-      &:focus {
-        border-color: $title-white;
-      }
-      &:disabled {
-        border-color: #ababab;
-      }
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    border-radius: 8px;
+    border: 1px solid #f8d24e;
+
+    &:hover {
+      border-color: #0a8817;
+    }
+    &:focus {
+      border-color: $title-white;
+    }
+    &:disabled {
+      border-color: #ababab;
+    }
   }
 
   &__main-linkB {
-      color: #f8d24e;
+    color: #f8d24e;
 
-      //padding: 11px 26px;
-      
-      text-align: center;
-      font-family: Montserrat;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 18px;
-      
-      text-decoration: underline;
-      &:hover {
-        color: #0a8817;
-      }
-      &:focus {
-        color:#0a8817;
-      }
-      &:disabled {
-        color: #ababab;
-      }
+    //padding: 11px 26px;
+
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+
+    text-decoration: underline;
+    &:hover {
+      color: #0a8817;
     }
+    &:focus {
+      color: #0a8817;
+    }
+    &:disabled {
+      color: #ababab;
+    }
+  }
 
   &__buttons {
     display: flex;
@@ -316,26 +307,24 @@
   }
 
   &__after-title {
-    
-
     @include tablet {
       margin-bottom: 32px;
       color: #fff;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 140%;
-    width: 165px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 140%;
+      width: 165px;
+
     
-      // @include fonts(null, 12, 1.4);
     }
 
     @include desktop {
       margin-bottom: 32px;
       color: #fff;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 140%;
-      // @include fonts(null, 14, 1.4);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 140%;
+    
     }
   }
 
@@ -378,20 +367,16 @@
     }
   }*/
 
-  &__image
-  {
-    position:absolute;
+  &__image {
+    position: absolute;
     bottom: 0;
     width: 177px;
     //right: 20%;
 
-     @include minimobile {
+    @include minimobile {
       width: 177px;
       right: 8%;
-      
     }
-
-
 
     @include mobile {
       width: 218px;
@@ -409,7 +394,4 @@
       right: 7%;
     }
   }
-
-
-  
 }
